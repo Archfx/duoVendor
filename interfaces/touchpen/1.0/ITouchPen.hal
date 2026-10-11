@@ -8,7 +8,18 @@ interface ITouchPen {
         NONE
     };
 
+    enum Dexterity : int32_t {
+        LEFT_HANDED,
+        RIGHT_HANDED,
+    };
+
     oneway setDisplayState(DisplayState state);
+
+    oneway setDexterity(Dexterity dexState);
+
+    oneway setTapToWakeEnable(bool state);
+
+    oneway setInteractive(bool state);
 
     oneway hingeAngle(int32_t newAngle);
 };

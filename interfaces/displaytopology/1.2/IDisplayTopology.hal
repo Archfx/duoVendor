@@ -3,4 +3,23 @@ package vendor.surface.displaytopology@1.2;
 import @1.1::IDisplayTopology;
 
 interface IDisplayTopology extends @1.1::IDisplayTopology {
+
+    enum LayoutState : int32_t {
+        NO_APP_RUNNING,
+        APP_WIDER_ASYNC,
+        APP_WIDER_SYNC
+    };
+
+    enum ExternalModeHint : int32_t {
+        MIRROR,
+        PRESENTATION
+    };
+
+    setLayoutState(LayoutState state);    
+
+    getLayoutState() generates (LayoutState state);
+
+    setExternalModeHint(ExternalModeHint hint);
+
+    getExternalModeHint() generates (ExternalModeHint hint);
 };
