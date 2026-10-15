@@ -1,5 +1,7 @@
 package vendor.surface.touchpen@1.0;
 
+import IPenCallback;
+
 interface ITouchPen {    
     enum DisplayState : int32_t {
         LEFT,
@@ -22,4 +24,6 @@ interface ITouchPen {
     oneway setInteractive(bool state);
 
     oneway hingeAngle(int32_t newAngle);
+
+    registerPenCallback(IPenCallback iPenCallback) generates (bool success);
 };

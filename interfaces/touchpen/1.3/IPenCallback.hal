@@ -1,0 +1,6 @@
+package vendor.surface.touchpen@1.3;
+
+import @1.2::IPenCallback;
+
+interface IPenCallback extends @1.2::IPenCallback {
+};
