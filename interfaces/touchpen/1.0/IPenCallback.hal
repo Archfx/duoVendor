@@ -1,0 +1,6 @@
+package vendor.surface.touchpen@1.0;
+
+interface IPenCallback {
+    
+    notifyPenDetected(vec<uint8_t> bArr, uint8_t b);
+};
