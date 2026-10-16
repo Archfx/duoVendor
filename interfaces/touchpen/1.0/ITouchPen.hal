@@ -1,6 +1,7 @@
 package vendor.surface.touchpen@1.0;
 
 import IPenCallback;
+import IDisplayTappedCallback;
 
 interface ITouchPen {    
     enum DisplayState : int32_t {
@@ -22,8 +23,22 @@ interface ITouchPen {
     oneway setTapToWakeEnable(bool state);
 
     oneway setInteractive(bool state);
+    
+    oneway sendPenTailReports(vec<int8_t> report);
+
+    oneway displayOrientation(int32_t orientation);
+
+    registerDisplayTappedCallback(IDisplayTappedCallback callback) generates (bool success);
+
+    unregisterDisplayTappedCallback(IDisplayTappedCallback callback) generates (bool success);
+
+    oneway setSecurityKey(vec<int8_t> key);
+
+    oneway setBluetoothMac(vec<int8_t> mac, int8_t type);
 
     oneway hingeAngle(int32_t newAngle);
 
-    registerPenCallback(IPenCallback iPenCallback) generates (bool success);
+    registerPenCallback(IPenCallback callback) generates (bool success);
+
+    unregisterPenCallback(IPenCallback callback) generates (bool success);
 };
