@@ -1,0 +1,5 @@
+package vendor.surface.touchpen@1.0;
+
+interface IDisplayTappedCallback {
+    oneway notifyTapToWake(int32_t state);
+};

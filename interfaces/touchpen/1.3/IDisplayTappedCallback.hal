@@ -1,0 +1,7 @@
+package vendor.surface.touchpen@1.3;
+
+import @1.2::IDisplayTappedCallback;
+
+interface IDisplayTappedCallback extends @1.2::IDisplayTappedCallback {
+
+};
