@@ -3,6 +3,9 @@ hidl_interface {
     root: "vendor.surface",
     srcs: [
         "ITouchPen.hal",
+        "IDisplayTappedCallback.hal",
+        "IHidAutoBondInputReportCallback.hal",
+        "IPenCallback.hal"
     ],
     interfaces: [
         "android.hidl.base@1.0",

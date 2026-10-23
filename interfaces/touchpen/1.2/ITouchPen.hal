@@ -1,7 +1,11 @@
 package vendor.surface.touchpen@1.2;
 
-
 import @1.1::ITouchPen;
+import @1.2::IPenTypeCallback;
 
 interface ITouchPen extends @1.1::ITouchPen {
+
+    registerPenTypeCallback(IPenTypeCallback callback) generates (bool success);
+
+    unregisterPenTypeCallback(IPenTypeCallback callback) generates (bool success);
 };
