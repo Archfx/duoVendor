@@ -1,0 +1,6 @@
+package vendor.surface.touchpen@1.2;
+
+interface IPenTypeCallback {
+
+    notifyPenTypeDetected(string penType);
+}

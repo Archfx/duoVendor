@@ -3,4 +3,20 @@ package vendor.surface.touchpen@1.1;
 import @1.0::ITouchPen;
 
 interface ITouchPen extends @1.0::ITouchPen {
+    
+    getFeatureAutoBondCapability(int8_t capability);
+
+    setFeatureAutoBondCapability(int8_t capability);
+
+    setOobBlePairingTK(vec<uint8_t> param1, vec<uint8_t> param2, int8_t param3, vec<uint8_t> param4);
+
+    // Slot 17: Reserved / placeholder for binary alignment
+    _reserved17();
+
+    // Slot 18: Reserved / placeholder for binary alignment
+    _reserved18();
+
+    registerHidAutoBondInputReportCallback(IHidAutoBondInputReportCallback callback) generates (bool success);
+
+    unregisterHidAutoBondInputReportCallback(IHidAutoBondInputReportCallback callback) generates (bool success);
 };
