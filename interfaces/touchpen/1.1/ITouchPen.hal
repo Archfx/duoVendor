@@ -1,6 +1,7 @@
 package vendor.surface.touchpen@1.1;
 
 import @1.0::ITouchPen;
+import @1.1::IHidAutoBondInputReportCallback;
 
 interface ITouchPen extends @1.0::ITouchPen {
     

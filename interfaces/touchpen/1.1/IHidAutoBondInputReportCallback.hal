@@ -1,0 +1,8 @@
+package vendor.surface.touchpen@1.1;
+
+interface IHidAutoBondInputReportCallback {
+
+    notifyAutoBondDeviceInRange(vec<uint8_t> address, vec<uint8_t> data, int8_t status);
+
+    notifyFeatureABCapabilityInputReport(int8_t capability);
+};

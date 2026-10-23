@@ -1,0 +1,7 @@
+package vendor.surface.touchpen@1.3;
+
+import @1.2::IHidAutoBondInputReportCallback;
+
+interface IHidAutoBondInputReportCallback extends @1.2::IHidAutoBondInputReportCallback {
+
+};

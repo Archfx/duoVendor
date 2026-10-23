@@ -4,6 +4,7 @@ hidl_interface {
     srcs: [
         "ITouchPen.hal",
         "IDisplayTappedCallback.hal",
+        "IHidAutoBondInputReportCallback.hal",
         "IPenCallback.hal"
     ],
     interfaces: [

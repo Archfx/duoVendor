@@ -1,7 +1,7 @@
 package vendor.surface.touchpen@1.0;
 
-import IPenCallback;
-import IDisplayTappedCallback;
+import @1.0::IPenCallback;
+import @1.0::IDisplayTappedCallback;
 
 interface ITouchPen {    
     enum DisplayState : int32_t {
