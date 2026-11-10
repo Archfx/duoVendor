@@ -22,5 +22,6 @@ applications that come with the platform
 <permissions>
     <privapp-permissions package="com.thain.duo">
         <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW" />
     </privapp-permissions>
 </permissions>
